@@ -15,13 +15,14 @@
     <meta name="theme-color" content="#101215" />
 
     <!-- Open Graph (Facebook, LinkedIn, Discord, etc.) -->
-    <!-- NOTE: og:image / og:url must be absolute URLs once deployed —
-         replace https://robertnadin.dev below with the real production domain. -->
+    <!-- __SITE_URL__ is resolved at build time in vite.config.js — it
+         auto-detects the Vercel deployment domain (production or preview),
+         or falls back to a VITE_SITE_URL env var for other hosts. -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://robertnadin.dev/" />
+    <meta property="og:url" content="__SITE_URL__/" />
     <meta property="og:title" content="Robert Nadin — Portfolio" />
     <meta property="og:description" content="Software Developer, BSc (Hons) Software Development with Cyber Security, First Class Honours, University of Stirling." />
-    <meta property="og:image" content="https://robertnadin.dev/og-image.png" />
+    <meta property="og:image" content="__SITE_URL__/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_GB" />
@@ -30,7 +31,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Robert Nadin — Portfolio" />
     <meta name="twitter:description" content="Software Developer, BSc (Hons) Software Development with Cyber Security, First Class Honours, University of Stirling." />
-    <meta name="twitter:image" content="https://robertnadin.dev/og-image.png" />
+    <meta name="twitter:image" content="__SITE_URL__/og-image.png" />
   </head>
   <body>
     <div id="root"></div>

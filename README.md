@@ -73,7 +73,14 @@ No API keys or environment variables are needed. To update the site's content:
 
 `public/` includes a full favicon set (standard + Apple touch icon + Android/PWA icons + maskable icon), a `site.webmanifest`, and an Open Graph / Twitter card image (`og-image.png`) — all generated from the site's own monogram and colour palette.
 
-Once this is deployed to its real domain, update the placeholder URLs in `index.html` (`og:url`, `og:image`, `twitter:image` — currently `https://robertnadin.dev`) to match, otherwise link previews on social platforms and messaging apps won't resolve correctly.
+The absolute URLs required for `og:url` / `og:image` / `twitter:image` are resolved automatically at build time (see `vite.config.js`), in this order:
+
+1. `VITE_SITE_URL` env var — set this to override manually, e.g. for a custom domain
+2. `VERCEL_PROJECT_PRODUCTION_URL` — set automatically by Vercel on production builds
+3. `VERCEL_URL` — set automatically by Vercel on *every* build, including preview/branch deployments, so link previews work correctly there too without any extra setup
+4. a hardcoded fallback, for local builds outside Vercel
+
+If this ever moves off Vercel to another host, set `VITE_SITE_URL` in that platform's environment variables (or a local `.env` file) to your real domain.
 
 ### 📜 License
 
