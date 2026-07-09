@@ -69,6 +69,12 @@ No API keys or environment variables are needed. To update the site's content:
 * **Colours** — edit the palette in `src/theme.js`.
 * **Copy** (hero text, stats, contact details) — edit the relevant component in `src/components/`.
 
+### 🖼️ Icons & Social Preview
+
+`public/` includes a full favicon set (standard + Apple touch icon + Android/PWA icons + maskable icon), a `site.webmanifest`, and an Open Graph / Twitter card image (`og-image.png`) — all generated from the site's own monogram and colour palette.
+
+Once this is deployed to its real domain, update the placeholder URLs in `index.html` (`og:url`, `og:image`, `twitter:image` — currently `https://robertnadin.dev`) to match, otherwise link previews on social platforms and messaging apps won't resolve correctly.
+
 ### 📜 License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
