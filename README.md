@@ -4,7 +4,7 @@
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://github.com/tyler-bravin/Robert-Nadin-Portfolio/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://github.com/tyler-bravin/Robert-Nadin-Portfolio/blob/master/README.md)
 
 A personal portfolio website built with **React.js** and **Tailwind CSS**, designed around a dark, editorial aesthetic — a two-tone green/gold accent system, Space Grotesk display type, and quiet, deliberate motion throughout. It's fully modular, with content (projects, experience, contact details) kept separate from presentation.
 
